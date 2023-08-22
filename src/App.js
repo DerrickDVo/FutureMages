@@ -1,22 +1,28 @@
-import logo from './logo.svg';
+import data from './data.js'
+import Mage from './components/Mage';
 import './App.css';
 
 function App() {
+
+  const mages = data.map(item => {
+    return (
+        <Mage
+            key={item.name}
+            {...item}
+            
+        />
+    )
+})
+
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <section className="cards-list">
+                {mages}
+        </section>
       </header>
     </div>
   );

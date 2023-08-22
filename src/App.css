@@ -36,3 +36,112 @@
     transform: rotate(360deg);
   }
 }
+
+.mage--text {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: large;
+  width: 40%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.mage--description {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: large;
+  width: 40%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+
+.mage--board {
+  display: block;
+  max-width: 48%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.mage--dataField{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.mage--header{
+  font-size: 48px;
+  font-weight: bold;
+  text-align: Center;
+  width: 40%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px auto;
+}
+
+.boldDivider {
+  border: none;
+  border-top: 8px solid #969696;
+  margin: 10px auto;
+}
+
+.mage--card{
+  display: block;
+  max-width: 20%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .mage--header{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: Center;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .mage--board {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .mage--text {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: large;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .mage--description {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: large;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+
+}
